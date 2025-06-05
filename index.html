@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Win a $100 McDonald's Gift Card!</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #ffc72c; /* McDonald's yellow */
+      padding: 20px 15px;
+      text-align: center;
+      color: #d80000; /* McDonald's red */
+      font-weight: bold;
+      font-size: 1.8rem;
+      letter-spacing: 1.5px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #d80000;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #444;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    form {
+      background: #fff8e1;
+      padding: 25px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #d80000;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 2px solid #d80000;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus {
+      border-color: #ffa500;
+      outline: none;
+    }
+    button {
+      background-color: #d80000;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #a60000;
+    }
+    .how-to-enter, .why-enter, .terms {
+      background: #fff8e1;
+      margin-top: 40px;
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .how-to-enter h3,
+    .why-enter h3,
+    .terms h3 {
+      color: #d80000;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      margin: 50px 0 30px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    footer a {
+      color: #d80000;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .container {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  McDonald's $100 Gift Card Giveaway
+</header>
+
+<div class="container">
+  <section class="hero">
+    <img 
+      src="Design_sans_titre.png" 
+      alt="$100 McDonald's Gift Card" 
+      id="giftCardImage"
+       />
+    <h1>Win a $100 McDonald's Gift Card Today!</h1>
+    <h2>Treat yourself or a loved one to your favorite McDonald's meals. Enter now for your chance to win!</h2>
+  </section>
+
+  <form id="entryForm" action="#" method="POST" onsubmit="return validateForm()">
+    <label for="fullname">Full Name *</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <label for="phone">Phone Number (optional)</label>
+    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" />
+
+    <button type="submit">Enter Giveaway</button>
+  </form>
+
+  <section class="how-to-enter">
+    <h3>How to Enter</h3>
+    <ul>
+      <li>Fill out the short entry form above.</li>
+      <li>Confirm your email address.</li>
+      <li>Get ready to enjoy $100 worth of McDonald's favorites!</li>
+    </ul>
+  </section>
+
+  <section class="why-enter">
+    <h3>Why Enter?</h3>
+    <ul>
+      <li><strong>$100 Gift Card</strong> – Enjoy a feast on us!</li>
+      <li><strong>No Purchase Necessary</strong> – Completely free to enter.</li>
+      <li><strong>Fast & Easy</strong> – Takes less than a minute!</li>
+      <li><strong>Exclusive Opportunity</strong> – Limited time only.</li>
+    </ul>
+  </section>
+
+  <section class="terms">
+    <h3>Terms & Conditions</h3>
+    <p>Giveaway open to residents of [Country]. One entry per person. Winner will be notified via email within 7 days after the contest ends. This promotion is not affiliated with or endorsed by McDonald's Corporation.</p>
+  </section>
+</div>
+
+<footer>
+  <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a>
+  <p>© 2025 McDonald's Gift Card Giveaway</p>
+</footer>
+
+<script>
+  function validateForm() {
+    const fullname = document.getElementById('fullname').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (fullname.length < 2) {
+      alert('Please enter your full name.');
+      return false;
+    }
+    if (!validateEmail(email)) {
+      alert('Please enter a valid email address.');
+      return false;
+    }
+    alert('Thank you for entering the giveaway! Good luck!');
+    return false; // Prevent actual submission for demo purposes
+  }
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email.toLowerCase());
+  }
+</script>
+
+</body>
+</html>
